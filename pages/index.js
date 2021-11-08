@@ -1,8 +1,13 @@
+import { useEffect } from "react";
 import Head from 'next/head'
 import Image from 'next/image'
+import { AsyncAPIService } from '../src/utils/apiService'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
+  useEffect(() => {
+    // AsyncAPIService()
+  }, [])
   return (
     <div className={styles.container}>
       <Head>
