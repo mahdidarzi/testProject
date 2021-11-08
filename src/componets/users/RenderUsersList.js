@@ -6,10 +6,11 @@ import UserItem from "./UserItem";
 export default function RenderUsersList({}) {
   const states = useSelector((state) => state);
   let usersList = states.usersReducer.users;
-  
+
   const renderUserList = () => {
     return usersList.map((user, index) => {
-      return <UserItem user={user} />;
+      //we use of UserItem item to show user data
+      return <UserItem key={index} user={user} />;
     });
   };
 
