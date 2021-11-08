@@ -1,5 +1,5 @@
 import Axios from "axios";
-// import CustomToast from "../common/toastGenerator";
+
 
 let userToken;
 
@@ -10,20 +10,14 @@ if (typeof Storage !== "undefined") {
 
 export const CONFIG = {
   baseUrl: {
-    serverUrl: "https://api.irannimrokh.ir", // https://api.irannimrokh.ir/api"https://api.testica.ir",
-    real: "https://api.irannimrokh.ir/api", //"https://api.testica.ir/api",
-    imgUrl: "https://api.irannimrokh.ir", //"https://api.testica.ir/api",
+    serverUrl: " https://jsonplaceholder.typicode.com/", 
+    real: " https://jsonplaceholder.typicode.com/",
+    imgUrl: " https://jsonplaceholder.typicode.com/", 
 
     mock: "",
   },
 
-  // baseUrl: {
-  //   serverUrl: "https://api.testica.ir/api",
-  //   real: "https://api.testica.ir/api",
-  //   imgUrl: "https://api.testica.ir/api", //"",
 
-  //   mock: "",
-  // },
 
   clientSecret: {
     headerName: "client-secret",
@@ -50,7 +44,6 @@ export const CONFIG = {
     onStatus: [401, 403],
   },
 };
-
 // const router = useRouter();
 // const userToken = localStorage.getItem("access_token");
 
